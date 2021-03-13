@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "pawn.h"
 
 int main()
 {
@@ -12,11 +13,17 @@ int main()
                {'2', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                {'1', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
+    int pawnp[9] = {};
+    int pawnP[9] = {};
+    while(0 == 0)
+    {
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
             printf("%2c", board[i][j]);
         }
         printf("\n");
+    }
+    pawn(board, pawnp, pawnP);
     }
     return 0;
 }
