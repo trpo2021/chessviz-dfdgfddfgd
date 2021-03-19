@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "pawn.h"
+#include <libchess/pawn.h>
 
 int main()
 {
