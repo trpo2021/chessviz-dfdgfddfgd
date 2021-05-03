@@ -26,22 +26,27 @@ void display(char board[9][9])
     //int pawnP[9] = {};
     int figuref[9] = {};
     int figureF[9] = {};
+    char turn[6] = {};
     while (0 == 0) {
         display(board);
         //pawn(board, pawnP, pawnP);
-        figure(board, figuref, figureF);
-        int i = victorycondition(board);
-        if (i == 1)
+        scanf("%s", turn);
+        if (turncheck(turn) == 0)
         {
-        	display(board);
-        	printf("White wins!\n");
-        	break;
-        }
-        if (i == 2)
-        {
-        	display(board);
-        	printf("Black wins!\n");
-        	break;
+        	figure(board, figuref, figureF, turn);
+        	int i = victorycondition(board);
+        	if (i == 1)
+        	{
+        		display(board);
+        		printf("White wins!\n");
+        		break;
+        	}
+        	if (i == 2)
+        	{
+        		display(board);
+        		printf("Black wins!\n");
+        		break;
+        	}
         }
     }
     return 0;
