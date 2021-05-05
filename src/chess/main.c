@@ -13,16 +13,41 @@ int main()
                {'2', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                {'1', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
-    int pawnp[9] = {};
-    int pawnP[9] = {};
-    while (0 == 0) {
-        for (int i = 0; i < 9; ++i) {
+void display(char board[9][9])
+{
+	for (int i = 0; i < 9; ++i) {
             for (int j = 0; j < 9; ++j) {
                 printf("%2c", board[i][j]);
             }
             printf("\n");
         }
-        pawn(board, pawnp, pawnP);
+}
+    //int pawnp[9] = {};
+    //int pawnP[9] = {};
+    int figuref[9] = {};
+    int figureF[9] = {};
+    char turn[6] = {};
+    while (0 == 0) {
+        display(board);
+        //pawn(board, pawnP, pawnP);
+        scanf("%s", turn);
+        if (turncheck(turn) == 0)
+        {
+        	figure(board, figuref, figureF, turn);
+        	int i = victorycondition(board);
+        	if (i == 1)
+        	{
+        		display(board);
+        		printf("White wins!\n");
+        		break;
+        	}
+        	if (i == 2)
+        	{
+        		display(board);
+        		printf("Black wins!\n");
+        		break;
+        	}
+        }
     }
     return 0;
 }
