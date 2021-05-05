@@ -16,4 +16,4 @@ jobs:
         run: make
         
       - name: chessviz test
-      	run: make test
+        run: make test
