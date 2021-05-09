@@ -24,15 +24,15 @@ int main()
     }
     // int pawnp[9] = {};
     // int pawnP[9] = {};
-    int figuref[9] = {};
-    int figureF[9] = {};
+    // int figuref[9] = {};
+    // int figureF[9] = {};
     char turn[6] = {};
     while (0 == 0) {
         display(board);
         // pawn(board, pawnP, pawnP);
         scanf("%s", turn);
         if (turncheck(turn) == 0) {
-            figure(board, figuref, figureF, turn);
+            figure(board, turn);
             int i = victorycondition(board);
             if (i == 1) {
                 display(board);

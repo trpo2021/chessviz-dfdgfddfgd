@@ -1,7 +1,7 @@
 #include <libchess/pawn.h>
 #include <stdio.h>
 
-void figure(char board[9][9], int figuref[9], int figureF[9], char turn[6])
+void figure(char board[9][9], char turn[6])
 {
     if ((board[(56 - turn[1])][(turn[0] - 96)] == 'p')) {
         board[(56 - turn[1])][(turn[0] - 96)] = ' ';
