@@ -2,9 +2,13 @@
 
 int turncheck(char turn[6])
 {
-    if ((turn[0] > 96) && (turn[0] < 105) && (turn[3] > 96) && (turn[3] < 105)
-        && (turn[1] > 48) && (turn[1] > 48) && (turn[1] < 57) && (turn[4] > 48)
-        && (turn[4] < 57))
+    int ascii = 96;
+    int ascii_i = 105;
+    int ascii_0 = 48;
+    int ascii_9 = 57;
+    if ((turn[0] > ascii) && (turn[0] < ascii_i) && (turn[3] > ascii) && (turn[3] < ascii_i)
+        && (turn[1] > ascii_0) && (turn[1] > ascii_0) && (turn[1] < ascii_9) && (turn[4] > ascii_0)
+        && (turn[4] < ascii_9))
         return 0;
     else
         return 1;

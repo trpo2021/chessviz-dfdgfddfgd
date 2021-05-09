@@ -72,9 +72,9 @@ CTEST(test, victorycondition_test1)
                {'2', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                {'1', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
-	int figuref[9] = {};
-    	int figureF[9] = {};
-    	figure(board, figuref, figureF, turn);
+	// int figuref[9] = {};
+    	// int figureF[9] = {};
+    	figure(board, turn);
 	const int result = victorycondition(board);
 	ASSERT_EQUAL(expected, result);
 }
@@ -93,9 +93,9 @@ CTEST(test, victorycondition_test2)
                {'2', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                {'1', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
-	int figuref[9] = {};
-    	int figureF[9] = {};
-    	figure(board, figuref, figureF, turn);
+	// int figuref[9] = {};
+    	// int figureF[9] = {};
+    	figure(board, turn);
 	const int result = victorycondition(board);
 	ASSERT_EQUAL(expected, result);
 }
@@ -114,9 +114,9 @@ CTEST(test, victorycondition_test3)
                {'2', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                {'1', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
-	int figuref[9] = {};
-    	int figureF[9] = {};
-    	figure(board, figuref, figureF, turn);
+	// int figuref[9] = {};
+    	// int figureF[9] = {};
+    	figure(board, turn);
 	const int result = victorycondition(board);
 	ASSERT_EQUAL(expected, result);
 }
