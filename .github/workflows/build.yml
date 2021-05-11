@@ -17,3 +17,6 @@ jobs:
         
       - name: chessviz test
         run: make test
+      
+      - name: Run test
+        run: bin/test.bin
